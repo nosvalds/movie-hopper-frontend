@@ -4,7 +4,7 @@ import {
   ListGroupItem
 } from 'react-bootstrap';
 
-const MovieGoersList = ({ movieGoersList }) => (
+const MovieGoersList = ({ movieGoersList, handleSelect }) => (
   (movieGoersList.length > 0) ? (
 
     <Fragment>
@@ -13,7 +13,12 @@ const MovieGoersList = ({ movieGoersList }) => (
       <ListGroup>
         {
           movieGoersList.map((movieGoer, index) => (
-            <ListGroupItem key={index}>{movieGoer.name}</ListGroupItem>
+            <ListGroupItem 
+              key={index}
+              onClick={ () => handleSelect(movieGoer.id) }
+            >
+              {movieGoer.name}
+            </ListGroupItem>
           ))
         }
       </ListGroup>
