@@ -1,6 +1,8 @@
 # DevelopMe_ Cohort #16: Final Project
 ## Front-end Architecture - React Redux
 
+[Trello Planning Board](https://trello.com/b/3IYLhVts)
+
 ### Team:
 #### Front End
 - Nik Osvalds
