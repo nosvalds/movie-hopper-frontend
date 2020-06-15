@@ -12,7 +12,7 @@ const getOneMovieGoer = (state, action) => {
         selectedMovieGoer: state.movieGoersList.filter((movieGoer) => {
             return movieGoer.id === action.id; 
         }),
-        movies: action.movies // action.movies is an array of movies passed from API
+        //movies: action.movies // action.movies is an array of movies passed from API
     }
 }
 
