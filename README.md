@@ -1,3 +1,54 @@
+# DevelopMe_ Cohort #16: Final Project
+## Front-end Architecture - React Redux
+
+### Team:
+#### Front End
+- Nik Osvalds
+- Richard Stibbard
+
+#### Back End
+- Kieran Cott
+- Henry MacFarlane
+
+
+### Collaborating:
+
+**Never commit directly to the master branch. Create a new branch, and make a merge request to a team-mate.**
+
+### Getting Started:
+
+1. Clone the repository to your local machine using the URL in the Repo
+```bash
+git clone {url} {foldername}
+```
+2. Install packages using npm, this pulls through the package.json file
+```bash
+npm install
+```
+3. Find a new task in the task-list to work on (either Github issues or Trello)
+
+4. Create a branch on your local machine to work on that issue/feature
+```bash
+git branch {name of branch}
+git checkout {name of branch}
+```
+
+5. Develop your features in your branch, and test on your local machine
+
+6. Once you're happy with your branch push your branch to the remote repo on gitHub
+```bash
+git push origin {branch}
+```
+
+7. In gitHub create a pull request for your new branch, assign a reviewer from the team (probably your other teammate) and link the issue you were working on (if it's a gitHub issue)
+
+8. Have a team member review the pull request and merge!
+
+9. Ensure the branch is deleted once its merged
+
+
+# Create React App Documentation
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
