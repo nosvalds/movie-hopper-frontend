@@ -1,6 +1,7 @@
 const initialState = {
-  selectedMovieGoer: {},
-  movieGoersList: [
+  selectedMovieGoer: [],
+  movieGoersList:
+    [
       {
         "id": "1",
         "name": "Chris Cassidy",
