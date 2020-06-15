@@ -4,6 +4,7 @@ import Header from './components/Header';
 import MovieGoersList from './components/MovieGoersList/';
 import SearchButton from './components/SearchButton';
 import Footer from './components/Footer';
+import MoviesList from './components/MoviesList';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <MovieGoersList />
       <SearchButton />
+      <MoviesList />
       <Footer />
     </>
    );
