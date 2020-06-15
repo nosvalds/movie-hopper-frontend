@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
-import PeopleList from './components/PeopleList/PeopleList';
+import MovieGoersList from './components/MovieGoersList/';
 
 function App() {
   return (
-    <PeopleList />
+    <>
+      <MovieGoersList />
+    </>
   );
 }
 
