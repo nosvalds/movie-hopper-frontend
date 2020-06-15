@@ -1,5 +1,5 @@
 const initialState = {
-  selectedMovieGoer: {},
+  selectedMovieGoer: [],
   movieGoersList:
     [
       {
