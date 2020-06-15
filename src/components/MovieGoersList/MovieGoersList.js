@@ -1,6 +1,5 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import {
-  Jumbotron,
   ListGroup,
   ListGroupItem
 } from 'react-bootstrap';
@@ -9,9 +8,7 @@ const MovieGoersList = ({ movieGoersList }) => (
   (movieGoersList.length > 0) ? (
 
     <Fragment>
-      <Jumbotron>
-        <h1>Movie-goers List</h1>
-      </Jumbotron>
+      <h2>Movie-goers List</h2>
 
       <ListGroup>
         {
@@ -23,9 +20,7 @@ const MovieGoersList = ({ movieGoersList }) => (
     </Fragment>
 
   ) : (
-      <Jumbotron>
-        <h1>No movie-goers found!</h1>
-      </Jumbotron>
+      <h2>No movie-goers found!</h2>
     )
 );
 
