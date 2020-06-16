@@ -1,24 +1,35 @@
 
-const getOneMovieGoer = (state, action) => {
+const selectMovieGoer = (state, action) => {
     return {
         ...state,
-        selectedMovieGoer: state.movieGoersList.filter((movieGoer) => {
-            return movieGoer.id === action.id;
-        }),
-        movies: action.movies // action.movies is an array of movies passed from API
+        selectedMovieGoer: [
+            ...state.selectedMovieGoer]
+            .concat(state.movieGoersList.filter((movieGoer) => {
+                return movieGoer.id === action.id;
+            })),
     }
 }
+
 const setPeople = (state, action) => {
     return {
         ...state,
         movieGoersList: action.data
     }
 }
+
+const setMovies = (state, action) => {
+    return {
+        ...state,
+        movies: action.movies,
+    }
+}
+
 // Reducer function
 const reducer = (state, action) => {
     switch (action.type) {
         case "SET_PEOPLE": return setPeople(state, action);
-        case "GET_ONE_MOVIEGOER": return getOneMovieGoer(state, action);
+        case "SELECT_MOVIEGOER": return selectMovieGoer(state, action);
+        case "SET_MOVIES": return setMovies(state, action);
         default: return state;
     }
 }
