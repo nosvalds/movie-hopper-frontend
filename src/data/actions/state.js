@@ -4,3 +4,9 @@ export const selectMovieGoer = (id) => {
         id
     }
 }
+export const setPeople = (data) => {
+    return {
+        type: "SET_PEOPLE",
+        data: data
+    }
+}
