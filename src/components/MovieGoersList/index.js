@@ -1,7 +1,6 @@
 import { connect } from 'react-redux';
 import MovieGoersList from './MovieGoersList';
 import { getPeople } from '../../data/actions/api';
-import { selectMovieGoer } from '../../data/actions/state'
 import { getMoviesOnePerson } from '../../data/actions/api';
 
 const mapStateToProps = (state) => {
