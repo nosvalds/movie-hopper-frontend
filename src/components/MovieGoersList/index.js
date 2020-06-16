@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import MovieGoersList from './MovieGoersList';
-import { selectMovieGoer } from '../../data/actions/state'
+import { getMoviesOnePerson } from '../../data/actions/api';
 
 const mapStateToProps = (state) => {
   return {
@@ -10,7 +10,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    handleSelect: (id) => dispatch(selectMovieGoer(id))
+    handleSelect: (id) => dispatch(getMoviesOnePerson(id))
   }
 }
 
