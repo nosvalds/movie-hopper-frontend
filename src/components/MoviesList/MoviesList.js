@@ -7,7 +7,7 @@ const MoviesList = ({ movies }) => (
   (movies.length > 0) ? (
     <>
       <h2 className="movies-title">Movies</h2>
-      <CardColumns>
+      <CardColumns className="movies-list">
         {movies.map((movie, i) => (
           <Card key={i}>
             <Card.Body>

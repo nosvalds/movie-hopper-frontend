@@ -26,7 +26,7 @@ code {
   font-size: 1.2rem;
 }
 
-.moviegoers-list {
+.moviegoers-list, .movies-list {
   grid-template-columns: 1fr;
   width: 90%;
   display: grid;
@@ -35,13 +35,13 @@ code {
 }
 
 @media screen and (min-width: 800px) {
-  .moviegoers-list {
+  .moviegoers-list, .movies-list {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .moviegoers-list {
+  .moviegoers-list, .movies-list {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
