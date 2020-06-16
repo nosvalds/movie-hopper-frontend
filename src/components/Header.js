@@ -4,7 +4,7 @@ import { Jumbotron } from 'react-bootstrap';
 const Header = () => (
 
   <Jumbotron>
-    <h1>Cohort 16's Favourite Movie Finder</h1>
+    <h1 className="moviegoers-title">Cohort 16's Favourite Movie Finder</h1>
   </Jumbotron >
 )
 
