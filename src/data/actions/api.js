@@ -21,17 +21,15 @@ export const getMovies = (id) => (dispatch, getState) => {
         peopleIds = selectedMovieGoers.map((person) => person.id);
         peopleIds.push(id); // array of currently selected movie-goers
     }
-    console.log(peopleIds);
     // if it's 1 selection query the /people/id route
     if (peopleIds.length === 1) {
         axios.get(`/people/${id}`).then(({ data }) => { 
             dispatch(setMovies(data.data.movies))
         })
     } else {
-        // if it's multiple selections, query the match route ?people=${peopleIds.join(',')}
+        // if it's multiple selections, query the match?people="ids" route
        axios.get(`/people/match?people=${peopleIds.join(',')}`).then(({ data }) => {
-            console.log(data.data);
-            //dispatch(setMovies(data.data.movies))
+            dispatch(setMovies([data.data]))
        });
     }
     dispatch(selectMovieGoer(id))
