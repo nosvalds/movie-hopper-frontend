@@ -1,9 +1,9 @@
 import axios from 'axios';
 
 export default axios.create({
-    baseURL: "https://homestead.test/api/",
+    baseURL: "http://homestead.test/api/",
     headers: {
         Accept: "application/json",
-        Authorization: "TBD" // Needs to be set up
+        //Authorization: "TBD" // Needs to be set up
     }
 })
