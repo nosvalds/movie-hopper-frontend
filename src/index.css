@@ -1,13 +1,76 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.moviegoers-title, .moviegoers-list-title, .movies-title {
+  text-align: center;
+}
+
+.search-button-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.search-button {
+  width: 300px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.moviegoers-list {
+  grid-template-columns: 1fr;
+  width: 90%;
+  display: grid;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+@media screen and (min-width: 800px) {
+  .moviegoers-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .moviegoers-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.moviegoer-card {
+  border: 1px solid black;
+  height: 100px;
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 75px;
+}
+
+.movies-title {
+  margin: 50px auto;
+}
+
+.card {
+  margin: 10px;
+}
+
+.instructions {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.85rem;
 }

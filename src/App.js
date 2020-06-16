@@ -6,7 +6,6 @@ import SearchButton from './components/SearchButton';
 import Footer from './components/Footer';
 import MoviesList from './components/MoviesList';
 
-
 function App() {
   return (
     <>
@@ -16,7 +15,7 @@ function App() {
       <MoviesList />
       <Footer />
     </>
-   );
+  );
 }
 
 export default App;

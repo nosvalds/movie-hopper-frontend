@@ -1,7 +1,9 @@
 import React from "react";
 
 const SearchButton = ({ handleSearch }) => (
-  <button onClick={ handleSearch }>Search</button>
+  <div className="search-button-container">
+    <button className="search-button" onClick={handleSearch}>Search</button>
+  </div>
 )
 
 export default SearchButton;

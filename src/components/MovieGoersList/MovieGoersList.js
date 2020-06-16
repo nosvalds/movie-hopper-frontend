@@ -8,19 +8,19 @@ class MovieGoersList extends Component {
   componentDidMount() {
     this.props.handleMount()
   }
-  
+
   render() {
     const { movieGoersList, handleSelect, selectedId } = this.props;
 
     return (
       (movieGoersList.length > 0) ? (
         <Fragment>
-          <h2>Movie-goers List</h2>
-          <ListGroup>
+          <h2 className="moviegoers-list-title">Movie-goers List</h2>
+          <ListGroup className="p-0 moviegoers-list">
             {
               movieGoersList.map((movieGoer, index) => (
-                <ListGroupItem
-                  active={ movieGoer.id === selectedId }
+                <ListGroupItem className="moviegoer-card"
+                  active={movieGoer.id === selectedId}
                   key={index}
                   onClick={() => handleSelect(movieGoer.id)}
                 >
@@ -32,7 +32,7 @@ class MovieGoersList extends Component {
         </Fragment>
 
       ) : (
-          <h2>No movie-goers found!</h2>
+          <h2 className="moviegoers-list-title">No movie-goers found!</h2>
         )
     );
   }
