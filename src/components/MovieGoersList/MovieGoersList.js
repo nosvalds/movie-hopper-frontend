@@ -8,19 +8,19 @@ class MovieGoersList extends Component {
   componentDidMount() {
     this.props.handleMount()
   }
+  
   render() {
-    const { movieGoersList, handleSelect } = this.props;
+    const { movieGoersList, handleSelect, selectedId } = this.props;
 
     return (
       (movieGoersList.length > 0) ? (
-
         <Fragment>
           <h2>Movie-goers List</h2>
-
           <ListGroup>
             {
               movieGoersList.map((movieGoer, index) => (
                 <ListGroupItem
+                  active={ movieGoer.id === selectedId }
                   key={index}
                   onClick={() => handleSelect(movieGoer.id)}
                 >

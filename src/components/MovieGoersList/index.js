@@ -2,17 +2,19 @@ import { connect } from 'react-redux';
 import MovieGoersList from './MovieGoersList';
 import { getPeople } from '../../data/actions/api';
 import { selectMovieGoer } from '../../data/actions/state'
+import { getMoviesOnePerson } from '../../data/actions/api';
 
 const mapStateToProps = (state) => {
   return {
     movieGoersList: state.movieGoersList,
+    selectedId: state.selectedMovieGoer.length > 0 ? state.selectedMovieGoer[0].id : null
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    handleSelect: (id) => dispatch(selectMovieGoer(id)),
-    handleMount: () => dispatch(getPeople())
+    handleMount: () => dispatch(getPeople()),
+    handleSelect: (id) => dispatch(getMoviesOnePerson(id)),
   }
 }
 

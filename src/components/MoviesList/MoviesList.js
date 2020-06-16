@@ -25,7 +25,7 @@ const MoviesList = ({ movies }) => (
     ) :
     (
         <Alert variant="primary">
-            Select a person and click search to see their favorite movies!
+            Select a person to see their favourite movies!
         </Alert>
     )
 );
