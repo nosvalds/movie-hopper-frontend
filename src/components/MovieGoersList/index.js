@@ -5,6 +5,7 @@ import { getMoviesOnePerson } from '../../data/actions/api';
 const mapStateToProps = (state) => {
   return {
     movieGoersList: state.movieGoersList,
+    selectedId: state.selectedMovieGoer.length > 0 ? state.selectedMovieGoer[0].id : null
   }
 }
 
