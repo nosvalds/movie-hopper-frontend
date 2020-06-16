@@ -5,7 +5,6 @@ import MovieGoersList from './components/MovieGoersList/';
 import Footer from './components/Footer';
 import MoviesList from './components/MoviesList';
 
-
 function App() {
   return (
     <>
@@ -14,7 +13,7 @@ function App() {
       <MoviesList />
       <Footer />
     </>
-   );
+  );
 }
 
 export default App;
