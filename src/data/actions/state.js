@@ -5,3 +5,9 @@ export const selectMovieGoer = (id, movies) => {
         movies
     }
 }
+export const setPeople = (data) => {
+    return {
+        type: "SET_PEOPLE",
+        data: data
+    }
+}
