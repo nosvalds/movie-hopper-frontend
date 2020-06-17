@@ -15,11 +15,7 @@ class MovieGoersList extends Component {
     return (
       (movieGoersList.length > 0) ? (
         <Fragment>
-<<<<<<< HEAD
           <h2 className="moviegoers-list-title">Movie Goers</h2>
-=======
-          <h2 className="moviegoers-list-title" aria-label="Movie-goers list">Movie-goers List</h2>
->>>>>>> @{-1}
           <ListGroup className="p-0 moviegoers-list">
             {
               movieGoersList.map((movieGoer, index) => (
