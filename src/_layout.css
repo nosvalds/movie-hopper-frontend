@@ -19,6 +19,7 @@ body {
 
 .moviegoers-title, .moviegoers-list-title, .movies-title {
   text-align: center;
+  margin: 50px auto;
 }
 
 .search-button-container {
