@@ -3,7 +3,7 @@ body {
 }
 
 .header {
-  background-image: url('logo.svg');
+  background-image: url('logo.png');
   background-repeat: no-repeat;
   background-position: left center;
   background-size: contain;
