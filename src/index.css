@@ -3,7 +3,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #6E7B85;
+  background-color:  #26A1FF;
 }
 
 code {
@@ -21,7 +21,7 @@ p {
 }
 
 .jumbotron {
-  background-color: #26A1FF;
+  background-color: #6E7B85;
 }
 
 .search-button-container {
@@ -58,8 +58,8 @@ p {
 }
 
 .moviegoer-card {
-  border: 1px solid #6E7B85;
-  background-color: #D6850B;
+  border: 1px solid #007bff;
+  background-color: #6E7B85;
   color: #fff;
   height: 100px;
   margin: 10px;
@@ -69,13 +69,18 @@ p {
   line-height: 75px;
 }
 
+.moviegoer-card:hover {
+  background-color: #007bff;
+  cursor: pointer;
+}
+
 .movies-title {
   margin: 50px auto;
 }
 
 .card {
   margin: 10px;
-  background-color: #0B7ED6;
+  background-color: #8A5300;
   color: #fff;
 }
 
