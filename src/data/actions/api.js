@@ -32,6 +32,6 @@ export const getMovies = (id) => (dispatch, getState) => {
             dispatch(setMovies([data.data]))
        });
     }
+    // always "select" a moviegoer, could add error handling if the above api calls failed.
     dispatch(selectMovieGoer(id))
-
 }
