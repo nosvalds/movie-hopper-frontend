@@ -1,24 +1,18 @@
-.moviegoers-title, p {
+.header-h1, .moviegoers-title, .moviegoers-list-title, .movies-title, .movie-card, .moviegoer-card, p {
   color: white;
 }
 
-.moviegoers-list-title, .movies-title {
-  color: #000;
-}
-
-.jumbotron {
-  background-color: #6E7B85;
+.header {
+  background-color: #8096ac;
 }
 
 .movie-card {
   background-color: #a8578d;
-  color: #fff;
 }
 
 .moviegoer-card {
   border: 1px solid #007bff;
   background-color: #6E7B85;
-  color: #fff;
 }
 
 .moviegoer-card:hover {

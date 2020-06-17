@@ -3,19 +3,18 @@ body {
 }
 
 .header {
+  width: 88%;
+  margin: 0 auto;
   background-image: url('logo.png');
   background-repeat: no-repeat;
   background-position: left center;
   background-size: contain;
+  height: 200px;
 }
 
-.header h1, .header p {
-  max-width: 50%;
-  margin: 0 auto;
-}
-
-p {
-  text-align: center;
+.header-h1, .header-para {
+  margin-left: 200px;
+  text-align: left;
 }
 
 .moviegoers-title, .moviegoers-list-title, .movies-title {
@@ -75,6 +74,5 @@ p {
 }
 
 .footer {
-  margin-top: 20px;
   text-align: center;
 }
