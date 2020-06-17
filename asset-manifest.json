@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/movie-hopper-frontend/static/css/main.62e947dd.chunk.css",
+    "main.js": "/movie-hopper-frontend/static/js/main.2b1436a7.chunk.js",
+    "main.js.map": "/movie-hopper-frontend/static/js/main.2b1436a7.chunk.js.map",
+    "runtime-main.js": "/movie-hopper-frontend/static/js/runtime-main.91829d85.js",
+    "runtime-main.js.map": "/movie-hopper-frontend/static/js/runtime-main.91829d85.js.map",
+    "static/js/2.41a0e26e.chunk.js": "/movie-hopper-frontend/static/js/2.41a0e26e.chunk.js",
+    "static/js/2.41a0e26e.chunk.js.map": "/movie-hopper-frontend/static/js/2.41a0e26e.chunk.js.map",
+    "index.html": "/movie-hopper-frontend/index.html",
+    "precache-manifest.5e1732ee61f6f9609e0b1a94c506e232.js": "/movie-hopper-frontend/precache-manifest.5e1732ee61f6f9609e0b1a94c506e232.js",
+    "service-worker.js": "/movie-hopper-frontend/service-worker.js",
+    "static/css/main.62e947dd.chunk.css.map": "/movie-hopper-frontend/static/css/main.62e947dd.chunk.css.map",
+    "static/js/2.41a0e26e.chunk.js.LICENSE.txt": "/movie-hopper-frontend/static/js/2.41a0e26e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91829d85.js",
+    "static/js/2.41a0e26e.chunk.js",
+    "static/css/main.62e947dd.chunk.css",
+    "static/js/main.2b1436a7.chunk.js"
+  ]
+}
