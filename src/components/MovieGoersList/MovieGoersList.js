@@ -10,7 +10,7 @@ class MovieGoersList extends Component {
   }
 
   render() {
-    const { movieGoersList, handleSelect, selectedId } = this.props;
+    const { movieGoersList, handleSelect, selectedIds } = this.props;
 
     return (
       (movieGoersList.length > 0) ? (
@@ -20,7 +20,7 @@ class MovieGoersList extends Component {
             {
               movieGoersList.map((movieGoer, index) => (
                 <ListGroupItem className="moviegoer-card"
-                  active={movieGoer.id === selectedId}
+                  active={selectedIds.indexOf(movieGoer.id) !== -1} // if movieGoer.id is in the selectedId array, then highlight as selected
                   key={index}
                   onClick={() => handleSelect(movieGoer.id)}
                 >

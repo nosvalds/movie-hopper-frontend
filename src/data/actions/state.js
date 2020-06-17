@@ -1,13 +1,26 @@
-export const selectMovieGoer = (id, movies) => {
+export const selectMovieGoer = (id) => {
     return {
-        type: "GET_ONE_MOVIEGOER",
-        id,
-        movies
+        type: "SELECT_MOVIEGOER",
+        id
     }
 }
+
 export const setPeople = (data) => {
     return {
         type: "SET_PEOPLE",
         data: data
+    }
+}
+
+export const setMovies = (movies) => {
+    return {
+        type: "SET_MOVIES",
+        movies
+    }
+}
+
+export const clearMovieGoerSelection = () => {
+    return {
+        type: "CLEAR_PEOPLE",
     }
 }
