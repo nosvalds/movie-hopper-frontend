@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7ee2fcaac8802ea76c935af9f7b70333",
+    "revision": "aeae77e9aa2710c3d7829ec950b5f691",
     "url": "/movie-hopper-frontend/index.html"
   },
   {
-    "revision": "cd533f3875569f940f2a",
-    "url": "/movie-hopper-frontend/static/css/main.62e947dd.chunk.css"
+    "revision": "e6533cf7a954cbb1e600",
+    "url": "/movie-hopper-frontend/static/css/main.b56b5039.chunk.css"
   },
   {
     "revision": "a053cb14f0cb604de9c3",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/movie-hopper-frontend/static/js/2.54e1219e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cd533f3875569f940f2a",
-    "url": "/movie-hopper-frontend/static/js/main.f5ba5782.chunk.js"
+    "revision": "e6533cf7a954cbb1e600",
+    "url": "/movie-hopper-frontend/static/js/main.62b2cf3e.chunk.js"
   },
   {
     "revision": "4005439ccf9e96a12947",
