@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 300px) {
   .header {
     height: 200px;
   }
@@ -6,7 +6,7 @@
     max-width: 65%;
   }
   .header h1 {
-    margin-top: -50px;
+    margin-top: -40px;
   }
 }
 
