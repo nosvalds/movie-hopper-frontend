@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+}
+
+.header {
+  background-image: url('logo.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+}
+
+p {
+  text-align: center;
+}
+
+.moviegoers-title, .moviegoers-list-title, .movies-title {
+  text-align: center;
+}
+
+.search-button-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.search-button {
+  width: 300px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.moviegoers-list {
+  grid-template-columns: 1fr;
+  width: 90%;
+  display: grid;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.movies-list {
+  width: 95%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+  margin: 10px;
+  flex-basis: 90%;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .moviegoers-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .movie-card {
+    flex-basis: 40%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .moviegoers-list, .movies-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .movie-card {
+    flex-basis: 30%;
+  }
+}
+
+.moviegoer-card {
+  height: 100px;
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+  line-height: 75px;
+}
+
+.movies-title {
+  margin: 50px auto;
+}
+
+.instructions {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+}

@@ -9,7 +9,7 @@ const MoviesList = ({ movies }) => (
       <h2 className="movies-title" aria-label="Movies">Movies</h2>
       <CardColumns className="movies-list" aria-label="Movies List">
         {movies.map((movie, i) => (
-          <Card key={i}>
+          <Card key={i} className="movie-card">
             <Card.Body>
               <Card.Title aria-label={movie.name}>
                 {movie.name}
