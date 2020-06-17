@@ -1,0 +1,39 @@
+@media screen and (min-width: 600px) {
+  .header {
+    height: 200px;
+  }
+  .header h1, .header p {
+    max-width: 65%;
+  }
+  .header h1 {
+    margin-top: -50px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .header {
+    height: 250px;
+  }
+  .moviegoers-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .movie-card {
+    flex-basis: 40%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .moviegoers-list, .movies-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .movie-card {
+    flex-basis: 30%;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .header h1, .header p {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}

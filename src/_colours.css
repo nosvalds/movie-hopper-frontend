@@ -1,5 +1,9 @@
-.moviegoers-title, .moviegoers-list-title, .movies-title, p {
+.moviegoers-title, p {
   color: white;
+}
+
+.moviegoers-list-title, .movies-title {
+  color: #000;
 }
 
 .jumbotron {

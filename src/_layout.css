@@ -9,6 +9,11 @@ body {
   background-size: contain;
 }
 
+.header h1, .header p {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
 p {
   text-align: center;
 }
@@ -50,24 +55,6 @@ p {
   margin: 10px;
   flex-basis: 90%;
   text-align: center;
-}
-
-@media screen and (min-width: 800px) {
-  .moviegoers-list {
-    grid-template-columns: 1fr 1fr;
-  }
-  .movie-card {
-    flex-basis: 40%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .moviegoers-list, .movies-list {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .movie-card {
-    flex-basis: 30%;
-  }
 }
 
 .moviegoer-card {
