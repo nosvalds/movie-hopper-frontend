@@ -15,7 +15,11 @@ class MovieGoersList extends Component {
     return (
       (movieGoersList.length > 0) ? (
         <Fragment>
+<<<<<<< HEAD
           <h2 className="moviegoers-list-title">Movie Goers</h2>
+=======
+          <h2 className="moviegoers-list-title" aria-label="Movie-goers list">Movie-goers List</h2>
+>>>>>>> @{-1}
           <ListGroup className="p-0 moviegoers-list">
             {
               movieGoersList.map((movieGoer, index) => (
@@ -23,6 +27,7 @@ class MovieGoersList extends Component {
                   active={selectedIds.indexOf(movieGoer.id) !== -1} // if movieGoer.id is in the selectedId array, then highlight as selected
                   key={index}
                   onClick={() => handleSelect(movieGoer.id)}
+                  aria-label={movieGoer.name}
                 >
                   {movieGoer.name}
                 </ListGroupItem>
@@ -32,7 +37,7 @@ class MovieGoersList extends Component {
         </Fragment>
 
       ) : (
-          <h2 className="moviegoers-list-title">No movie-goers found!</h2>
+          <h2 className="moviegoers-list-title" aria-label="No movie-goers found">No movie-goers found!</h2>
         )
     );
   }
