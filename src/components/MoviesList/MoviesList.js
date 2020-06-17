@@ -6,16 +6,16 @@ import Alert from 'react-bootstrap/Alert'
 const MoviesList = ({ movies }) => (
   (movies.length > 0) ? (
     <>
-      <h2 className="movies-title">Movies</h2>
-      <CardColumns className="movies-list">
+      <h2 className="movies-title" aria-label="Movies">Movies</h2>
+      <CardColumns className="movies-list" aria-label="Movies List">
         {movies.map((movie, i) => (
           <Card key={i}>
             <Card.Body>
-              <Card.Title>
+              <Card.Title aria-label={movie.name}>
                 {movie.name}
               </Card.Title>
             </Card.Body>
-            <Card.Footer>
+            <Card.Footer aria-label={movie.year}>
               {movie.year}
             </Card.Footer>
           </Card>
@@ -24,7 +24,8 @@ const MoviesList = ({ movies }) => (
     </>
   ) :
     (
-      <Alert variant="primary" className="instructions">
+      <Alert variant="primary" className="instructions"
+        aria-label="Select a person to see their favourite movies!">
         Select a person to see their favourite movies!
       </Alert>
     )
