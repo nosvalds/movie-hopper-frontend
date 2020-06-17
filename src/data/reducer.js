@@ -30,6 +30,10 @@ const reducer = (state, action) => {
         case "SET_PEOPLE": return setPeople(state, action);
         case "SELECT_MOVIEGOER": return selectMovieGoer(state, action);
         case "SET_MOVIES": return setMovies(state, action);
+        case "CLEAR_PEOPLE": return { // clear selected moviegoers
+            ...state,
+            selectedMovieGoer: [],
+        };
         default: return state;
     }
 }

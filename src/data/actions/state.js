@@ -18,3 +18,9 @@ export const setMovies = (movies) => {
         movies
     }
 }
+
+export const clearMovieGoerSelection = () => {
+    return {
+        type: "CLEAR_PEOPLE",
+    }
+}
