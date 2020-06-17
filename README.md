@@ -48,6 +48,12 @@ git push origin {branch}
 
 9. Ensure the branch is deleted once its merged
 
+## Deploying
+```bash
+npm run build
+
+npm run deploy
+```
 
 # Create React App Documentation
 
