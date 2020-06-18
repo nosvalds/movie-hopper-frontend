@@ -28,14 +28,15 @@ export const getMovies = (id) => (dispatch, getState) => {
     if (peopleIds.length === 1) {
         console.log("In if")
         axios.get(`/people/${id}`).then(({ data }) => {
-            dispatch(setMovies(data.data.movies))
+            let movies = data.data.movies.map((movie) => ({ frequency: 1, movie: movie })) // turn into new format of state with frequency
+            dispatch(setMovies(movies))
 
         })
     } else if (peopleIds.length > 1) {
         console.log("In else")
         // if it's multiple selections, query the match?people="ids" route
         axios.get(`/people/match?people=${peopleIds.join(',')}`).then(({ data }) => {
-            dispatch(setMovies([data.data]))
+            dispatch(setMovies(data.data))
         });
     }
     console.log(peopleIds.length)

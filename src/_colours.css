@@ -10,6 +10,10 @@
   background-color: #a8578d;
 }
 
+.movie-card-header {
+  background-color: #007bff;
+}
+
 .moviegoer-card {
   border: 1px solid #007bff;
   background-color: #6E7B85;
