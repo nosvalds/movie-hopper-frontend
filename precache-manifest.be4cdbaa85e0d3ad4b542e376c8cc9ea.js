@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5d1515105ab9a19bfb973110fcadaa72",
+    "revision": "47423c8b615ed5cd72097159f81dcea1",
     "url": "/movie-hopper-frontend/index.html"
   },
   {
-    "revision": "dd09ef470224d8a002bb",
+    "revision": "6d13ef9f1cd1901ebd45",
     "url": "/movie-hopper-frontend/static/css/main.512c8e45.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/movie-hopper-frontend/static/js/2.4aee1c65.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dd09ef470224d8a002bb",
-    "url": "/movie-hopper-frontend/static/js/main.ba0ebe45.chunk.js"
+    "revision": "6d13ef9f1cd1901ebd45",
+    "url": "/movie-hopper-frontend/static/js/main.7a131b3f.chunk.js"
   },
   {
     "revision": "4005439ccf9e96a12947",
