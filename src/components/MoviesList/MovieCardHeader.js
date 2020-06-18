@@ -11,7 +11,13 @@ const MovieCardHeader = ({movieFrequency, numPeopleSelected}) => {
           You {numPeopleSelected === 2 ? "both" : "all"} like this movie!
         </Card.Header>
       )
-    } 
+    } else {
+      return (
+        <Card.Header className="movie-card-header" aria-label={movieFrequency}>
+          {movieFrequency} people like this movie!
+        </Card.Header>
+      )
+    }
   }
 
 export default MovieCardHeader;
