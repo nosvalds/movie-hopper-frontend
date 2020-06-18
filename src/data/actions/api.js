@@ -5,6 +5,15 @@ import {
     setMovies,
 } from './state'
 
+const compareMovieFrequency = (a, b) => {
+    const freqA = a.frequency;
+    const freqB = b.frequency;
+
+    let comparison = 0;
+    comparison = freqA < freqB ? 1 : -1;
+    return comparison;
+}
+
 export const getPeople = () => {
     return (dispatch) => {
         axios.get("/people").then(({ data }) => {
@@ -16,8 +25,7 @@ export const getPeople = () => {
 export const getAllMovies = () => {
     return (dispatch) => {
         axios.get("/movies").then(({ data }) => {
-            console.log(data);
-            dispatch(setMovies(data))
+            dispatch(setMovies(data.sort(compareMovieFrequency)))
         })
     }
 }
@@ -32,13 +40,13 @@ export const getMovies = (id) => (dispatch, getState) => {
     if (peopleIds.length === 1) {
         axios.get(`/people/${id}`).then(({ data }) => {
             let movies = data.data.movies.map((movie) => ({ frequency: 1, movie: movie })) // turn into new format of state with frequency
-            dispatch(setMovies(movies))
+            dispatch(setMovies(movies.sort(compareMovieFrequency)))
 
         })
     } else if (peopleIds.length > 1) {
         // if it's multiple selections, query the match?people="ids" route
         axios.get(`/people/match?people=${peopleIds.join(',')}`).then(({ data }) => {
-            dispatch(setMovies(data.data.filter((movie) => (movie.frequency > 1)))); // if there is more than 1 person selected don't save movies only liked by 1 person to state
+            dispatch(setMovies(data.data.filter((movie) => (movie.frequency > 1)).sort(compareMovieFrequency))); // if there is more than 1 person selected don't save movies only liked by 1 person to state
         });
     }
     // always "select" a moviegoer, could add error handling if the above api calls failed.
