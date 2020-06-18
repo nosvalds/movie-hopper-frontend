@@ -4,6 +4,7 @@ import MoviesList from './MoviesList';
 const mapStateToProps = (state) => {
   return {
     movies: state.movies,
+    numPeopleSelected: state.selectedMovieGoer.length,
   }
 }
 
