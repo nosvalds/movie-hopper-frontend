@@ -1,8 +1,9 @@
 import axios from "../../axios/axios"
+
 import {
-    selectMovieGoer,
-    setPeople,
-    setMovies,
+  selectMovieGoer,
+  setPeople,
+  setMovies,
 } from './state'
 
 const compareMovieFrequency = (a, b) => {
@@ -15,11 +16,11 @@ const compareMovieFrequency = (a, b) => {
 }
 
 export const getPeople = () => {
-    return (dispatch) => {
-        axios.get("/people").then(({ data }) => {
-            dispatch(setPeople(data.data))
-        })
-    }
+  return (dispatch) => {
+    axios.get("/people").then(({ data }) => {
+      dispatch(setPeople(data.data))
+    })
+  }
 }
 
 export const getAllMovies = () => {

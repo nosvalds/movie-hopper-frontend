@@ -1,7 +1,8 @@
 const initialState = {
   selectedMovieGoer: [],
   movieGoersList: [],
-  movies: []
+  movies: [],
+  loaded: false,
 };
 
 export default initialState;
