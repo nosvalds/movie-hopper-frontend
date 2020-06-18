@@ -1,22 +1,27 @@
-.header-h1, .header-para, .movie-card, .moviegoer-card {
+.header-h1, .movie-card, .moviegoer-card {
   color: white;
 }
 
 .header {
-  background-color: #8096ac;
+  background-color: #606c79;
+  ;
 }
 
-.movie-card {
-  background-color: #a8578d;
+.movie-card-header {
+  background-color: #007bff;
 }
 
 .moviegoer-card {
   border: 1px solid #007bff;
-  background-color: #6E7B85;
+  background-color: #566068;
 }
 
 .moviegoer-card:hover {
   background-color: #007bff;
+}
+
+.movie-card {
+  background-color: #a8578d;
 }
 
 .moviegoers-title, .moviegoers-list-title, .movies-title, .footer {

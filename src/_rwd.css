@@ -1,14 +1,10 @@
 @media screen and (min-width: 900px) {
-  .header-h1, .header-para {
+  .header-h1 {
     text-align: center;
     margin: 0;
   }
   .header-h1 {
     font-size: 3.5rem;
-    line-height: 3.5rem;
-  }
-  .header-para {
-    font-size: 1.25rem;
   }
   .header {
     height: 250px;
@@ -22,6 +18,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .header-h1 {
+    font-size: 5.5rem;
+  }
   .moviegoers-list, .movies-list {
     grid-template-columns: 1fr 1fr 1fr;
   }
