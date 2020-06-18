@@ -17,6 +17,12 @@ body {
   text-align: right;
 }
 
+.loader {
+  height: 100px;
+  margin: 30px auto;
+  text-align: center;
+}
+
 .moviegoers-title, .moviegoers-list-title, .movies-title {
   text-align: center;
   margin: 50px auto;
