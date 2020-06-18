@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+}
+
+.header {
+  width: 88%;
+  margin: 0 auto;
+  background-image: url('logo.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  height: 200px;
+}
+
+.header-h1, .header-para {
+  margin-left: 200px;
+  text-align: left;
+}
+
+.moviegoers-title, .moviegoers-list-title, .movies-title {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.search-button-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.search-button {
+  width: 300px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.moviegoers-list {
+  grid-template-columns: 1fr;
+  width: 90%;
+  display: grid;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.movies-list {
+  width: 95%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+  margin: 10px;
+  flex-basis: 90%;
+  text-align: center;
+}
+
+.moviegoer-card {
+  height: 100px;
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+  line-height: 75px;
+}
+
+.movies-title {
+  margin: 50px auto;
+}
+
+.instructions {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer {
+  margin: 30px auto;
+  text-align: center;
+}

@@ -1,0 +1,28 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header-h1 {
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin-top: -30px;
+  line-height: 2.5rem;
+}
+
+.header-para {
+  font-weight: 300;
+}
+
+.moviegoer-card {
+  font-size: 1.4rem;
+}
+
+.instructions {
+  font-size: 1.2rem;
+}
+
+.footer {
+  font-size: 0.85rem;
+}

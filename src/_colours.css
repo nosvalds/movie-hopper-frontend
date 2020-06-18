@@ -1,0 +1,24 @@
+.header-h1, .header-para, .movie-card, .moviegoer-card {
+  color: white;
+}
+
+.header {
+  background-color: #8096ac;
+}
+
+.movie-card {
+  background-color: #a8578d;
+}
+
+.moviegoer-card {
+  border: 1px solid #007bff;
+  background-color: #6E7B85;
+}
+
+.moviegoer-card:hover {
+  background-color: #007bff;
+}
+
+.moviegoers-title, .moviegoers-list-title, .movies-title, .footer {
+  color: #000;
+}
