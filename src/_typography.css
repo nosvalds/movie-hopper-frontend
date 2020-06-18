@@ -10,6 +10,10 @@ body {
   line-height: 3rem;
 }
 
+.h1-link:hover {
+  text-decoration: none;
+}
+
 .moviegoer-card {
   font-size: 1.4rem;
 }
@@ -21,6 +25,7 @@ body {
 .footer {
   font-size: 0.85rem;
 }
+
 .noscript {
   color: red;
 }

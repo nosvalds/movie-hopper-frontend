@@ -4,6 +4,8 @@ import {
   ListGroupItem
 } from 'react-bootstrap';
 
+import Loading from '../Loading/Loading';
+
 class MovieGoersList extends Component {
   componentDidMount() {
     this.props.handleMount()
@@ -31,9 +33,8 @@ class MovieGoersList extends Component {
             }
           </ListGroup>
         </Fragment>
-
       ) : (
-          <h2 className="moviegoers-list-title" aria-label="No movie-goers found">No movie-goers found!</h2>
+          <Loading />
         )
     );
   }
