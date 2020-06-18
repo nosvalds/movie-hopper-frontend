@@ -50,10 +50,15 @@ git push origin {branch}
 
 ## Deploying
 ```bash
-npm run build
-
 npm run deploy
 ```
+
+- The above command uses the gh-pages package to deploy to gitHub pages. Script lives in package.json and runs:
+```
+react-scripts build
+gh-pages -d build
+```
+
 
 # Create React App Documentation
 
