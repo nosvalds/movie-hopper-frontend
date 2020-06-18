@@ -36,7 +36,7 @@ export const getMovies = (id) => (dispatch, getState) => {
         console.log("In else")
         // if it's multiple selections, query the match?people="ids" route
         axios.get(`/people/match?people=${peopleIds.join(',')}`).then(({ data }) => {
-            dispatch(setMovies(data.data))
+            dispatch(setMovies(data.data.filter((movie) => (movie.frequency > 1)))); // if there is more than 1 person selected don't save movies only liked by 1 person to state
         });
     }
     console.log(peopleIds.length)
