@@ -27,8 +27,9 @@ const MoviesList = ({ movies, numPeopleSelected }) => (
   ) :
     (
       <Alert variant="primary" className="instructions"
-        aria-label="Select a person to see their favourite movies!">
-        Select a person to see their favourite movies!
+        aria-label="Select a person to see their favourite movies. Select multiple people to see movies they have in common!">
+        Select a person to see their favourite movies.<br />
+        Select multiple people to see movies they have in common!
       </Alert>
     )
 );
