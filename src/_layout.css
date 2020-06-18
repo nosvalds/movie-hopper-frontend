@@ -12,7 +12,7 @@ body {
   height: 200px;
 }
 
-.header-h1, .header-para {
+.header-h1 {
   margin-left: 200px;
   text-align: left;
 }
