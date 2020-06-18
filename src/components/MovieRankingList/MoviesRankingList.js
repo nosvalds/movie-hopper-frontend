@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card';
 import CardColumns from 'react-bootstrap/CardColumns';
 import Alert from 'react-bootstrap/Alert';
+import Loading from '../Loading/Loading';
+
 
 class MoviesRankingList extends Component {
   componentDidMount() {
@@ -35,13 +37,16 @@ class MoviesRankingList extends Component {
         </>
       ) :
       (
-        <Alert 
-          variant="primary" 
-          className="instructions"
-          aria-label="No favourite movies yet!"
-        >
-          No favourite movies yet!
-        </Alert>
+        <>
+          <Loading />
+          <Alert 
+            variant="primary" 
+            className="instructions"
+            aria-label="No favourite movies yet!"
+          >
+            No favourite movies yet!
+          </Alert>
+        </>
       )
     );
   }
