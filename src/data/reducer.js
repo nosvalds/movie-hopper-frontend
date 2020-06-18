@@ -1,12 +1,18 @@
 
 const selectMovieGoer = (state, action) => {
+  const newSelection = [...state.selectedMovieGoer]
+  const existingIndex = newSelection.findIndex((person) => action.id === person.id)
+  if (existingIndex !== -1) {
+    newSelection.splice(existingIndex, 1)
+  } else {
+    const movieGoer = state.movieGoersList.find((movieGoer) => {
+      return movieGoer.id === action.id;
+    })
+    newSelection.push(movieGoer)
+  }
   return {
     ...state,
-    selectedMovieGoer: [
-      ...state.selectedMovieGoer]
-      .concat(state.movieGoersList.filter((movieGoer) => {
-        return movieGoer.id === action.id;
-      })),
+    selectedMovieGoer: newSelection
   }
 }
 
