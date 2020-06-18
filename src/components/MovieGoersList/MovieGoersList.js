@@ -33,7 +33,6 @@ class MovieGoersList extends Component {
             }
           </ListGroup>
         </Fragment>
-
       ) : (
           <Loading />
         )
