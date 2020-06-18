@@ -1,0 +1,31 @@
+@media screen and (min-width: 900px) {
+  .header-h1, .header-para {
+    text-align: center;
+    margin: 0;
+  }
+  .header-h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+  .header-para {
+    font-size: 1.25rem;
+  }
+  .header {
+    height: 250px;
+  }
+  .moviegoers-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .movie-card {
+    flex-basis: 40%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .moviegoers-list, .movies-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .movie-card {
+    flex-basis: 30%;
+  }
+}

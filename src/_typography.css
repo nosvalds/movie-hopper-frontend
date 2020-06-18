@@ -4,6 +4,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.header-h1 {
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin-top: -30px;
+  line-height: 2.5rem;
+}
+
+.header-para {
+  font-weight: 300;
+}
+
 .moviegoer-card {
   font-size: 1.4rem;
 }
