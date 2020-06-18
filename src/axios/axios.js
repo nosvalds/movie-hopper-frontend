@@ -1,9 +1,8 @@
 import axios from 'axios';
 
 export default axios.create({
-  baseURL: "https://hopper.developme.space/api/",
+  baseURL: (process.env.NODE_ENV === 'production') ? "https://hopper.developme.space/api/" : "http://homestead.test/api/",
   headers: {
     Accept: "application/json",
-    // Authorization: "TBD" // Needs to be set up
   }
 })
