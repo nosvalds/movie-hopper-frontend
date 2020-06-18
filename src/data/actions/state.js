@@ -24,3 +24,10 @@ export const clearMovieGoerSelection = () => {
     type: "CLEAR_ALL",
   }
 }
+
+export const loaded = ({ loaded }) => {
+  return {
+    type: "LOADED",
+    loaded: true
+  };
+};
