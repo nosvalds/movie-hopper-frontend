@@ -15,7 +15,7 @@
 
 ### Collaborating:
 
-**Never commit directly to the master branch. Create a new branch, and make a merge request to a team-mate.**
+**Never commit directly to the master branch. Create a new feature branch from the development branch, and make a pull request for a team-mate to review and merge.**
 
 ### Getting Started:
 
@@ -23,7 +23,7 @@
 ```bash
 git clone {url} {foldername}
 ```
-2. Install packages using npm, this pulls through the package.json file
+2. Install neccessary packages using npm
 ```bash
 npm install
 ```
@@ -31,22 +31,31 @@ npm install
 
 4. Create a branch on your local machine to work on that issue/feature
 ```bash
-git branch {name of branch}
-git checkout {name of branch}
+git checkout -b {name of branch}
 ```
-
-5. Develop your features in your branch, and test on your local machine
+5. Develop your features in your feature branch, and test on your local machine
 
 6. Once you're happy with your branch push your branch to the remote repo on gitHub
 ```bash
 git push origin {branch}
 ```
-
 7. In gitHub create a pull request for your new branch, assign a reviewer from the team (probably your other teammate) and link the issue you were working on (if it's a gitHub issue)
 
 8. Have a team member review the pull request and merge!
 
 9. Ensure the branch is deleted once its merged
+
+### API Set Up
+- To test the front end fully you'll need to set up a local instance of the API on a VM. Follow the instructions on this gitHub repo to install:
+  - (https://github.com/kierancott/developMe-final-project--backend)
+  
+#### development/testing endpoint
+(http://homestead.test/api/)
+
+#### production endpoint
+(https://hopper.developme.space/api/
+
+
 
 ## Deploying
 ```bash
