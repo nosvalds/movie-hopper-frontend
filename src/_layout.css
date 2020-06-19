@@ -84,3 +84,7 @@ body {
   margin: 30px auto;
   text-align: center;
 }
+
+.big-buttons-container {
+  width: 80%;
+}

@@ -1,3 +1,25 @@
 .moviegoer-card:hover {
   cursor: pointer;
 }
+
+.big-buttons-container a {
+  text-decoration: none;
+}
+
+#movies-btn:hover:before {
+  content:"Movies";
+  font-size: 5rem;
+}
+
+#movies-btn:hover .hover-hide {
+  display:none
+}
+
+#people-btn:hover:before {
+  content:"Moviegoers";
+  font-size: 5rem;
+}
+
+#people-btn:hover .hover-hide {
+  display:none
+}
