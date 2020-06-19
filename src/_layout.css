@@ -38,7 +38,6 @@ body {
 .search-button {
   width: 300px;
   margin-top: 20px;
-  font-size: 1.2rem;
 }
 
 .moviegoers-list {
@@ -83,4 +82,8 @@ body {
 .footer {
   margin: 30px auto;
   text-align: center;
+}
+
+.big-buttons-container {
+  width: 80%;
 }

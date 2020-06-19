@@ -1,29 +1,43 @@
 .header-h1, .movie-card, .moviegoer-card {
-  color: white;
+  color: #FFF;
 }
 
 .header {
-  background-color: #606c79;
-  ;
+  background-color: #5E5E5E;
+}
+
+.search-button {
+  color: #FFF;
+  background-color: #000;
+  border: 1px solid black;
+}
+
+.search-button:hover {
+  color: #000;
+  background-color: #FFF;
 }
 
 .movie-card-header {
-  background-color: #007bff;
-}
-
-.moviegoer-card {
-  border: 1px solid #007bff;
-  background-color: #566068;
-}
-
-.moviegoer-card:hover {
-  background-color: #007bff;
+  background-color: #0E3CBD;
 }
 
 .movie-card {
-  background-color: #a8578d;
+  background-color: #13506e;
+}
+
+.moviegoer-card {
+  border: 1px solid #0E3CBD;
+  background-color: #555555;
+}
+
+.moviegoer-card:hover {
+  background-color: #259FDE;
 }
 
 .moviegoers-title, .moviegoers-list-title, .movies-title, .footer {
   color: #000;
+}
+
+.instructions {
+  background-color: #259FDE;
 }
