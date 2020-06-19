@@ -29,3 +29,7 @@ body {
 .noscript {
   color: red;
 }
+
+.search-button {
+  font-size: 1.2rem;
+}

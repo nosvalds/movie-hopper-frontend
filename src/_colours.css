@@ -22,12 +22,12 @@
 }
 
 .movie-card {
-  background-color: #259FDE;
+  background-color: #13506e;
 }
 
 .moviegoer-card {
   border: 1px solid #0E3CBD;
-  background-color: #848484;
+  background-color: #555555;
 }
 
 .moviegoer-card:hover {
